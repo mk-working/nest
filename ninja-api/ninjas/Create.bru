@@ -1,0 +1,18 @@
+meta {
+  name: Create
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3001/ninjas
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "string",
+    "weapon": "stars"
+  }
+}

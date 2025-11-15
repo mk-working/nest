@@ -1,0 +1,17 @@
+meta {
+  name: Get
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:3001/ninjas?weapon=stars
+  body: none
+  auth: none
+}
+
+params:query {
+  weapon: stars
+  ~weapon: nunchucks
+  ~type: helloworlds
+}
